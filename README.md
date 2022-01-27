@@ -49,5 +49,4 @@ As a user, I should be able to search by cities, zipcode, and streetname
 
 
 
-<img width="937" alt="service" src="https://user-images.githubusercontent.com/44215076/151294391-8698e6bc-6df3-4091-8015-056f7ef55bac.png">
 
