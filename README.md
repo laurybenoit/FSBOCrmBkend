@@ -8,7 +8,7 @@ Github Links:
 
 ERD 
 
-![Untitled](For%20Sale%20by%20Owner%20Application%2040aef913352047f5a92d78af5521321f/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/44215076/151292511-bc4e9b65-edc3-4a5e-abf2-bf7ff1ab4922.png)
 
 # User Stories
 
@@ -40,4 +40,4 @@ As a user, I should be able to view different activities or listing within that 
 
 As a user, I should be able to search by cities, zipcode, and streetname
 
-![Untitled](For%20Sale%20by%20Owner%20Application%2040aef913352047f5a92d78af5521321f/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/44215076/151292556-8de4ef86-cdf4-476f-8b17-06944c1424b2.png)
