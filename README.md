@@ -9,13 +9,8 @@
 ## Service 
 <img width="937" alt="service" src="https://user-images.githubusercontent.com/44215076/151294391-8698e6bc-6df3-4091-8015-056f7ef55bac.png">
 
-Github Links:
 
-[https://github.com/laurybenoit/FSBOCrmFtend-](https://github.com/laurybenoit/FSBOCrmFtend-)
-
-[https://github.com/laurybenoit/FSBOCrmBkend](https://github.com/laurybenoit/FSBOCrmBkend)
-
-ERD 
+## ERD 
 
 ![Untitled](https://user-images.githubusercontent.com/44215076/151292511-bc4e9b65-edc3-4a5e-abf2-bf7ff1ab4922.png)
 
