@@ -5,7 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-
+@Entity
 @Table(name = "customer")
 public class Customer {
 
@@ -52,6 +52,10 @@ public class Customer {
         this.seller = seller;
         this.isBuyer = isBuyer;
         this.isSeller = isSeller;
+    }
+
+    public Customer() {
+
     }
 
     public Long getId() {
