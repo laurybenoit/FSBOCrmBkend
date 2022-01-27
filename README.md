@@ -40,4 +40,10 @@ As a user, I should be able to view different activities or listing within that 
 
 As a user, I should be able to search by cities, zipcode, and streetname
 
+
 ![Untitled 1](https://user-images.githubusercontent.com/44215076/151292556-8de4ef86-cdf4-476f-8b17-06944c1424b2.png)
+
+
+
+<img width="937" alt="service" src="https://user-images.githubusercontent.com/44215076/151294391-8698e6bc-6df3-4091-8015-056f7ef55bac.png">
+
