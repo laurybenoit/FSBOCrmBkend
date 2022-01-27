@@ -44,6 +44,8 @@ As a user, I should be able to view different activities or listing within that 
 
 As a user, I should be able to search by cities, zipcode, and streetname
 
+## Hudles
+Normally saved everything on Onedrive, while coding notice folder was gone. I started to panic , for some reason Onedrive sign out, folder disappear and everything I was working on this morning is lost. Super annoyed at OneDrive. 
 
 ![Untitled 1](https://user-images.githubusercontent.com/44215076/151292556-8de4ef86-cdf4-476f-8b17-06944c1424b2.png)
 
