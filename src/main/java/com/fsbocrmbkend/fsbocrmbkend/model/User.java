@@ -1,16 +1,17 @@
 package com.fsbocrmbkend.fsbocrmbkend.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import javax.persistence.*;
 
 @Entity
-@Table(name = "customer")
-public class Customer {
+@Table(name = "users")
+public class User {
 
     @Id
     @Column
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column
@@ -22,8 +23,8 @@ public class Customer {
     @Column
     private long phone;
 
-    @Column
-    private String email;
+    @Column(unique = true)
+    private String emailAddress;
 
     @Column
     private String address;
@@ -40,23 +41,24 @@ public class Customer {
     @Column
     private boolean isSeller;
 
+    @Column
+    private String userName;
 
-    public Customer(Long id, String firstName, String lastName, long phone, String email, String address, boolean buyer, boolean seller, boolean isBuyer, boolean isSeller) {
-        this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.phone = phone;
-        this.email = email;
-        this.address = address;
-        this.buyer = buyer;
-        this.seller = seller;
-        this.isBuyer = isBuyer;
-        this.isSeller = isSeller;
+    @Column
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    private String password;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "profile_id", referencedColumnName = "id")
+    @JsonIgnore
+    private UserProfile userProfile;
+
+
+
+    public User() {
+
     }
 
-    public Customer() {
-
-    }
 
     public Long getId() {
         return id;
@@ -90,12 +92,12 @@ public class Customer {
         this.phone = phone;
     }
 
-    public String getEmail() {
-        return email;
+    public String getEmailAddress() {
+        return emailAddress;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
     }
 
     public String getAddress() {
@@ -121,4 +123,29 @@ public class Customer {
     public void setSeller(boolean seller) {
         this.seller = seller;
     }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public UserProfile getUserProfile() {
+        return userProfile;
+    }
+
+    public void setUserProfile(UserProfile userProfile) {
+        this.userProfile = userProfile;
+    }
+
 }

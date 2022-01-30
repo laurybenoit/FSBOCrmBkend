@@ -1,9 +1,8 @@
 package com.fsbocrmbkend.fsbocrmbkend.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import net.bytebuddy.dynamic.loading.InjectionClassLoader;
+
+import javax.persistence.*;
 
 @Entity
 @Table(name="properties")
@@ -11,6 +10,7 @@ public class Properties {
 
     @Id
     @Column
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Long id;
 
     @Column
